@@ -22,7 +22,7 @@ char** SplitString(const char* inputstring, char delimiter) {
         }
         StringPtr++;
     }
-    stringBufferWithoutDelimiter[j] = '\0';
+    stringBufferWithoutDelimiter[stringposition] = '\0';
     stringDuplicaionBuffer[index++] = stringdup(stringBufferWithoutDelimiter);
     stringDuplicaionBuffer[index] = NULL;
     free(stringBufferWithoutDelimiter);
